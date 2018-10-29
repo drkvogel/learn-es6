@@ -1,0 +1,16 @@
+<html>
+
+<head>
+    <title>ejs test</title>
+    <script src="ejs.js"></script>
+</head>
+
+<body>
+    <script>
+        let people = ['geddy', 'neil', 'alex'],
+            html = ejs.render('<%= people.join(", "); %>', { people: people });
+    </script>
+
+</body>
+
+</html>
